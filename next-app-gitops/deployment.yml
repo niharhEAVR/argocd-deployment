@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bun-next-app-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: bun-next-app
+  template:
+    metadata:
+      labels:
+        app: bun-next-app
+    spec:
+      containers:
+        - name: bun-next-app
+          image: bun-next-app:latest
+          ports:
+            - containerPort: 3000
