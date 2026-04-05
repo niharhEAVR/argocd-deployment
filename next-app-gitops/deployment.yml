@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: bun-next-app
-          image: niharlnx/bun-next-app:latest
+          image: niharlnx/bun-next-app:4c790e06432fef97a804c27c0d573c22505c6e4b
           ports:
             - containerPort: 3000
